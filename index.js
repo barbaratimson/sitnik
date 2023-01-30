@@ -57,15 +57,18 @@ app.post('/reg', (req,res) => {
    const  password = req.headers.password
    const confirmPassword = req.body.confirmpassword
    const id =  users.length + 1
-
     // if (password != confirmPassword) {
     //     res.json({
     //         message:"Password doesnt match"
     //     })
     // } 
-
+    
+    a = Math.floor(Math.random() * 10);
+    b = Math.floor(Math.random() * 10);
     users.push({id,username:username,password:password,friends:[],auth:false})
     res.json({
+        a,
+        b,
         message:"User created",
         message:"Please confirm verification",
     })
@@ -77,8 +80,6 @@ app.post('/reg/confirm', (req,res) => {
     const verif = req.headers.verification
     let user = users.find(da => da.username == username)
     let index = users.indexOf(user)
-    a = Math.floor(Math.random() * 10);
-    b = Math.floor(Math.random() * 10);
     let c = a + b
     if (verif == c) {
         users[index].auth = true
