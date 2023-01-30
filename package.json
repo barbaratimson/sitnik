@@ -1,0 +1,23 @@
+{
+  "name": "sitnik",
+  "version": "1.0.0",
+  "description": "Соколов Сергей  Тимошин Никита Гр: 432",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbaratimson/sitnik.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barbaratimson/sitnik/issues"
+  },
+  "homepage": "https://github.com/barbaratimson/sitnik#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2"
+  }
+}
